@@ -4,15 +4,6 @@ import getRandomInRange from '../../utils/getRandomInRange';
 const RainbowText = ({ text, className, tag }: { className?: string; text: string; tag: string }) => {
   const CustomTag: any = tag;
 
-  const colorsTextHover = [
-    'hover:text-pastel-green',
-    'hover:text-pastel-blue',
-    'hover:text-pastel-yellow',
-    'hover:text-pastel-indigo',
-    'hover:text-pastel-purple',
-    'hover:text-pastel-pink',
-  ];
-
   const colorsText = [
     'text-pastel-green',
     'text-pastel-blue',
@@ -54,9 +45,7 @@ const RainbowText = ({ text, className, tag }: { className?: string; text: strin
             <span
               key={index}
               onMouseOver={onHover}
-              className={`transition duration-300 inline-block transform hover:-translate-y-3 hover:scale-105 ${
-                colorsTextHover[getRandomInRange(0, colorsTextHover.length - 1)]
-              }`}
+              className={`transition duration-300 inline-block transform hover:-translate-y-3 hover:scale-105`}
             >
               {char}
             </span>
