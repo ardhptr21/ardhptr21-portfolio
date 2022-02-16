@@ -14,7 +14,7 @@ module.exports = {
           pink: colors.pink['500'],
           blue: colors.blue['500'],
           indigo: colors.indigo['400'],
-          purple: colors.indigo['500'],
+          purple: colors.purple['500'],
           yellow: colors.yellow['300'],
         },
       },
