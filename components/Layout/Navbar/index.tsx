@@ -7,7 +7,7 @@ const Navbar = (): JSX.Element => {
 
   return (
     <nav
-      className="fixed left-0 right-0 flex items-center justify-between h-16 px-10 mx-8 bg-white border border-black select-none md:px-16 rounded-xl font-montserrat top-8 md:mx-28 lg:mx-48"
+      className="fixed left-0 right-0 z-10 flex items-center justify-between h-16 px-10 mx-8 bg-white border border-black select-none md:px-16 rounded-xl font-montserrat top-8 md:mx-28 lg:mx-48"
       style={{ boxShadow: '0 0 100px #ccc' }}
     >
       <div className="relative w-24 h-full">
