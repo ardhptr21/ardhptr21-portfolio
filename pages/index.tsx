@@ -1,10 +1,13 @@
 import type { NextPage } from 'next';
-
+import Section from '../components/Base/Section';
+import Layout from '../components/Layout';
 const Home: NextPage = () => {
   return (
-    <div className="flex text-8xl font-montserrat font-semibold justify-center h-screen items-center bg-gray-100 bg-gradient-to-tr from-pastel-purple via-pastel-indigo to-pastel-green">
-      Hello World
-    </div>
+    <Layout>
+      <Section isPt={true}>
+        <h1>Hello World</h1>
+      </Section>
+    </Layout>
   );
 };
 
