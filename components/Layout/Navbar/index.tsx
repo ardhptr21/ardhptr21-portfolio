@@ -1,13 +1,32 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useCallback, useEffect, useState, WheelEvent } from 'react';
 import NavLink from './NavLink';
 
 const Navbar = (): JSX.Element => {
   const [isToggle, setIsToggle] = useState<boolean>(false);
+  const [isScrollUp, setIsScrollUp] = useState<boolean>(false);
+  const [lastScrollPosition, setLastScrollPosition] = useState<number>(0);
+
+  const handleScroll = useCallback(() => {
+    if (window.scrollY > lastScrollPosition) {
+      setIsScrollUp(true);
+    } else {
+      setIsScrollUp(false);
+    }
+    setLastScrollPosition(window.scrollY);
+  }, [lastScrollPosition]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
 
   return (
     <nav
-      className="fixed left-0 right-0 z-10 flex items-center justify-between h-16 px-10 mx-8 bg-white border border-black select-none md:px-16 rounded-xl font-montserrat top-8 md:mx-28 lg:mx-48"
+      className={`fixed left-0 right-0 z-50 flex items-center justify-between h-16 px-10 mx-8 bg-white border border-black select-none md:px-16 rounded-xl font-montserrat transform transition-transform duration-500 top-8 md:mx-28 lg:mx-48 ${
+        isScrollUp ? '-translate-y-24' : ''
+      }`}
       style={{ boxShadow: '0 0 100px #ccc' }}
     >
       <div className="relative w-24 h-full">
