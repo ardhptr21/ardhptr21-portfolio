@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useCallback, useEffect, useState, WheelEvent } from 'react';
 import NavLink from './NavLink';
 
@@ -29,11 +30,19 @@ const Navbar = (): JSX.Element => {
       }`}
       style={{ boxShadow: '0 0 100px #ccc' }}
     >
-      <div className="relative w-24 h-full">
-        <a href="">
-          <Image src="/vercel.svg" alt="logo" layout="fill" />
+      <Link href="/">
+        <a className="flex items-center justify-center gap-3">
+          <p>
+            <span className="inline-block text-5xl font-extrabold font-open-sans">A</span>
+            <span className="inline-block ml-1 font-bold">rdhi</span>
+          </p>
+          <p>
+            <span className="inline-block text-5xl font-extrabold font-open-sans">P</span>
+            <span className="inline-block -ml-1 font-bold">utra</span>
+          </p>
+          {/* <Image src="/vercel.svg" alt="logo" layout="fill" /> */}
         </a>
-      </div>
+      </Link>
       <button className="lg:hidden" onClick={() => setIsToggle(!isToggle)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

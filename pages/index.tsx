@@ -28,7 +28,7 @@ const Home: NextPage<IProps> = ({ quote }: IProps) => {
           <RainbowText
             tag="h1"
             text="Ardhi Putra."
-            className="z-0 inline-block text-4xl font-bold text-gray-900 md:text-5xl lg:text-8xl cursor-cell font-montserrat"
+            className="z-0 inline-block text-4xl font-bold text-gray-900 md:text-5xl lg:text-7xl cursor-cell font-montserrat"
           />
           <h2 className="text-xl font-bold text-gray-500 md:text-3xl lg:text-5xl">I build things awesome.</h2>
           <p className="text-sm text-gray-900 md:text-base">
