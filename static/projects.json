@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Candaan API",
+    "description": "Rest API to provision and collect some jokes from Indonesia",
+    "techs": ["NodeJS", "Express"],
+    "link": "https://github.com/ardhptr21/candaan-api"
+  },
+  {
+    "title": "Password Manager",
+    "description": "Website or tool to manage your own account password securely",
+    "techs": ["Django", "Javascript", "SCSS"],
+    "link": "https://github.com/ardhptr21/password-manager"
+  },
+  {
+    "title": "Pypass",
+    "description": "Application based on CLI (Command Line Interface) to manage your own account password securely",
+    "techs": ["VS Code", "Python"],
+    "link": "https://github.com/ardhptr21/password-manager"
+  },
+  {
+    "title": "Telegraph Clone",
+    "description": "A clone of the Telegraph website",
+    "techs": ["Typescript", "React", "Firebase", "Tailwind"],
+    "link": "https://github.com/ardhptr21/telegraph-clone"
+  },
+  {
+    "title": "Onport",
+    "description": "Build your own online portfolio with Onport",
+    "techs": ["React", "Express", "MongoDB", "Tailwind"],
+    "link": "https://github.com/ardhptr21/telegraph-clone"
+  },
+  {
+    "title": "Cafe Cashier App",
+    "description": "Some simple application cashier for a cafe",
+    "techs": ["Laravel", "Tailwind"],
+    "link": "https://github.com/ardhptr21/telegraph-clone"
+  }
+]

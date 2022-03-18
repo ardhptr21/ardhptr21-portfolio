@@ -1,15 +1,17 @@
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import { BsMouse } from 'react-icons/bs';
 import { RiArrowUpSLine } from 'react-icons/ri';
 import Section from '../components/Base/Section';
 import Button from '../components/Button';
+import CardProject from '../components/Card/CardProject';
 import Layout from '../components/Layout';
 import NiceLink from '../components/Text/NiceLink';
 import RainbowText from '../components/Text/RainbowText';
 import Title from '../components/Text/Title';
 import getRandomInRange from '../utils/getRandomInRange';
+import projects from '../static/projects.json';
 
 type quoteT = { text: string; author: string } | null;
 
@@ -39,7 +41,7 @@ const Home: NextPage<IProps> = ({ quote }: IProps) => {
             . I really enjoy when writing code, because it
             {"'"}s like playing a game. Currently, I{"'"}m focused on building a modern website.
           </p>
-          <Button type="button" className="mt-8 hover:bg-pastel-pink">
+          <Button type="button" className="mt-8 hover:bg-pastel-pink w-max">
             See Detail
           </Button>
         </div>
@@ -55,8 +57,8 @@ const Home: NextPage<IProps> = ({ quote }: IProps) => {
           </div>
         </div>
       </Section>
-      <Section className="bg-gradient-to-tr from-pastel-purple to-pastel-indigo">
-        <Title>Quote of The Day</Title>
+
+      <Section>
         <blockquote className="text-center">
           <q className="inline-block text-2xl">
             {quote?.text ? quote.text : 'Sorry, but no quote is available today.'}
@@ -65,6 +67,21 @@ const Home: NextPage<IProps> = ({ quote }: IProps) => {
             {quote?.author ? quote.author : 'Unknown'}
           </cite>
         </blockquote>
+      </Section>
+
+      <Section>
+        <Title>Some Things I{"'"}ve Built</Title>
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, idx) => (
+            <CardProject
+              key={idx}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+              techs={project.techs}
+            />
+          ))}
+        </div>
       </Section>
     </Layout>
   );
