@@ -1,0 +1,100 @@
+[
+  {
+    "imgname": "html.png",
+    "title": "HTML",
+    "width": 512,
+    "height": 512,
+    "site": "https://developer.mozilla.org/docs/Web/HTML"
+  },
+  {
+    "imgname": "css.png",
+    "title": "CSS",
+    "width": 512,
+    "height": 512,
+    "site": "https://developer.mozilla.org/docs/Web/CSS"
+  },
+  {
+    "imgname": "javascript.png",
+    "title": "Javascript",
+    "width": 225,
+    "height": 225,
+    "site": "https://developer.mozilla.org/docs/Web/Javascript"
+  },
+  {
+    "imgname": "nodejs.png",
+    "title": "NodeJS",
+    "width": 583,
+    "height": 648,
+    "site": "https://nodejs.org/"
+  },
+  {
+    "imgname": "typescript.png",
+    "title": "Typescript",
+    "width": 600,
+    "height": 600,
+    "site": "https://www.typescriptlang.org/"
+  },
+  {
+    "imgname": "php.png",
+    "title": "PHP",
+    "width": 500,
+    "height": 270,
+    "site": "https://www.php.net/"
+  },
+  {
+    "imgname": "python.png",
+    "title": "Python",
+    "width": 640,
+    "height": 640,
+    "site": "https://www.python.org/"
+  },
+  {
+    "imgname": "sass.png",
+    "title": "Sass",
+    "width": 320,
+    "height": 320,
+    "site": "https://sass-lang.com/"
+  },
+  {
+    "imgname": "bootstrap.png",
+    "title": "Bootstrap",
+    "width": 512,
+    "height": 408,
+    "site": "https://getbootstrap.com/"
+  },
+  {
+    "imgname": "react.png",
+    "title": "React",
+    "width": 441,
+    "height": 441,
+    "site": "https://reactjs.org/"
+  },
+  {
+    "imgname": "next.png",
+    "title": "NextJS",
+    "width": 300,
+    "height": 300,
+    "site": "https://nextjs.org/"
+  },
+  {
+    "imgname": "express.png",
+    "title": "Express",
+    "width": 225,
+    "height": 225,
+    "site": "https://expressjs.com/"
+  },
+  {
+    "imgname": "laravel.png",
+    "title": "Laravel",
+    "width": 800,
+    "height": 832,
+    "site": "https://laravel.com/"
+  },
+  {
+    "imgname": "django.jpg",
+    "title": "Django",
+    "width": 550,
+    "height": 550,
+    "site": "https://www.djangoproject.com/"
+  }
+]

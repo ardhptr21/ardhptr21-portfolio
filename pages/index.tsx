@@ -12,6 +12,8 @@ import RainbowText from '../components/Text/RainbowText';
 import Title from '../components/Text/Title';
 import getRandomInRange from '../utils/getRandomInRange';
 import projects from '../static/projects.json';
+import skills from '../static/skills.json';
+import CardSkill from '../components/Card/CardSkill';
 
 type quoteT = { text: string; author: string } | null;
 
@@ -64,6 +66,15 @@ const Home: NextPage<IProps> = ({ quote }: IProps) => {
             {quote?.author ? quote.author : 'Unknown'}
           </cite>
         </blockquote>
+      </Section>
+
+      <Section id="skills">
+        <Title>My Skills</Title>
+        <div className="grid grid-cols-2 gap-10 md:grid-cols-4 lg:grid-cols-5">
+          {skills.map((skill, idx) => (
+            <CardSkill skill={skill} key={idx} />
+          ))}
+        </div>
       </Section>
 
       <Section id="projects">
