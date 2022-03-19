@@ -22,7 +22,7 @@ interface IProps {
 const Home: NextPage<IProps> = ({ quote }: IProps) => {
   return (
     <Layout>
-      <Section className="flex items-center justify-between h-screen">
+      <Section className="flex items-center justify-between h-screen" id="home">
         <div className="flex flex-col justify-center gap-5 text-xl" style={{ flex: 2 }}>
           <h2 className="text-sm font-semibold tracking-wide text-gray-900 md:text-base font-montserrat">
             Hi, my name is
@@ -41,9 +41,6 @@ const Home: NextPage<IProps> = ({ quote }: IProps) => {
             . I really enjoy when writing code, because it
             {"'"}s like playing a game. Currently, I{"'"}m focused on building a modern website.
           </p>
-          <Button type="button" className="mt-8 hover:bg-pastel-pink w-max">
-            See Detail
-          </Button>
         </div>
         <div className="relative items-center justify-center hidden w-full h-full md:flex" style={{ flex: 1.2 }}>
           <Image src="/images/people.svg" alt="people" width="500px" height="500px" />
@@ -69,7 +66,7 @@ const Home: NextPage<IProps> = ({ quote }: IProps) => {
         </blockquote>
       </Section>
 
-      <Section>
+      <Section id="projects">
         <Title>Some Things I{"'"}ve Built</Title>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, idx) => (
@@ -81,6 +78,21 @@ const Home: NextPage<IProps> = ({ quote }: IProps) => {
               techs={project.techs}
             />
           ))}
+        </div>
+      </Section>
+
+      <Section id="contact">
+        <Title>Get In Touch</Title>
+        <div className="text-center">
+          <p className="max-w-xl m-auto text-lg md:text-xl">
+            If you want to know more about me or you have some question, my inbox is always open for you. I’ll try my
+            best to get back to you!
+          </p>
+          <a href="mailto:ardhiputrapradana21@gmail.com">
+            <Button type="button" className="mt-8 hover:bg-pastel-pink w-max">
+              Say Hello
+            </Button>
+          </a>
         </div>
       </Section>
     </Layout>

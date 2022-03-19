@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <Html lang="en">
+      <Html lang="en" className="scroll-smooth">
         <Head />
         <body className="antialiased font-open-sans">
           <Main />

@@ -60,10 +60,9 @@ const Navbar = (): JSX.Element => {
           isToggle ? 'scale-100' : 'scale-y-0'
         }`}
       >
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/">About</NavLink>
-        <NavLink to="/">Skill</NavLink>
-        <NavLink to="/">Project</NavLink>
+        <NavLink to="/#home">Home</NavLink>
+        <NavLink to="/#projects">Projects</NavLink>
+        <NavLink to="/#contact">Contact</NavLink>
       </ul>
     </nav>
   );
