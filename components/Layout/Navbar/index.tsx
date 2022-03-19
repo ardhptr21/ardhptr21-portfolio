@@ -60,9 +60,15 @@ const Navbar = (): JSX.Element => {
           isToggle ? 'scale-100' : 'scale-y-0'
         }`}
       >
-        <NavLink to="/#home">Home</NavLink>
-        <NavLink to="/#projects">Projects</NavLink>
-        <NavLink to="/#contact">Contact</NavLink>
+        <NavLink onClick={() => setIsToggle(false)} to="/#home">
+          Home
+        </NavLink>
+        <NavLink onClick={() => setIsToggle(false)} to="/#projects">
+          Projects
+        </NavLink>
+        <NavLink onClick={() => setIsToggle(false)} to="/#contact">
+          Contact
+        </NavLink>
       </ul>
     </nav>
   );

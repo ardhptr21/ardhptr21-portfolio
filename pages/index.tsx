@@ -81,7 +81,7 @@ const Home: NextPage<IProps> = ({ quote }: IProps) => {
         </div>
       </Section>
 
-      <Section id="contact">
+      <Section id="contact" className="mt-20">
         <Title>Get In Touch</Title>
         <div className="text-center">
           <p className="max-w-xl m-auto text-lg md:text-xl">

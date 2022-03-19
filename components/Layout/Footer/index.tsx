@@ -5,7 +5,7 @@ import { FiCodepen, FiGithub, FiInstagram, FiLinkedin, FiTwitter } from 'react-i
 const Footer = (): JSX.Element => {
   return (
     <footer className="text-center mt-18">
-      <Section className="pb-10">
+      <Section>
         <div className="flex items-center mb-6 justify-evenly md:hidden">
           <a href="https://github.com/ardhptr21" target="_blank" rel="noreferrer">
             <FiGithub className="w-5 h-5 transition duration-300 transform hover:scale-110 hover:text-pastel-yellow hover:-translate-y-1" />

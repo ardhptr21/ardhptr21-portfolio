@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="scroll-smooth">
         <Head />
-        <body className="antialiased font-open-sans">
+        <body className="antialiased font-open-sans scrollbar scrollbar-thumb-gray-800 scrollbar-thumb-rounded scrollbar-thin">
           <Main />
           <NextScript />
         </body>
