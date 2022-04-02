@@ -63,6 +63,12 @@ const Navbar = (): JSX.Element => {
         <NavLink onClick={() => setIsToggle(false)} to="/#home">
           Home
         </NavLink>
+        <NavLink onClick={() => setIsToggle(false)} to="/#educations">
+          Educations
+        </NavLink>
+        <NavLink onClick={() => setIsToggle(false)} to="/#skills">
+          Skills
+        </NavLink>
         <NavLink onClick={() => setIsToggle(false)} to="/#projects">
           Projects
         </NavLink>
